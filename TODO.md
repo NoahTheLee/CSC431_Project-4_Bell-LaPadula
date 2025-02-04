@@ -11,13 +11,13 @@ V   V                 V
 ### Tasks
 
 
-1. [ ] Set up Security Levels
-    Possibly make an enumerator for this?
+1. [x] Set up Security Levels > NOAH LEE
+    [x] Possibly make an enumerator for this? > NOAH LEE
 
-2. [ ] Set up objects/users
-        [ ] Set up objects
+2. [x] Set up objects/users > NOAH LEE
+        [x] Set up objects > NOAH LEE
                 Set this up as custom objects?
-        [ ] Set up Users
+        [x] Set up Users > NOAH LEE
                 Set this up as a custom object?
 
 3. [ ] Access Control
