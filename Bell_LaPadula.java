@@ -49,8 +49,16 @@ public class Bell_LaPadula {
             return name;
         }
 
-        public void setClearanceLevel(ClearanceLevel clearanceLevel) {
-            this.clearanceLevel = clearanceLevel;
+        public void tryRead(Secured_Object object) {
+            System.out.println("I'm " + this.getName() + ", my clearance level is " + this.getClearanceLevel());
+            System.out.println("I'm trying to read " + object.getName() + ", which has a clearance level of "
+                    + object.getClearanceLevel());
+            if (canRead(this, object)) {
+                System.out.println("I can read this object! Here's the content: " + object.getContent());
+            } else {
+                System.out.println("I can't read this object!");
+            }
+            System.out.println();
         }
     }
 
