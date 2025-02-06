@@ -93,6 +93,7 @@ public class Bell_LaPadula {
         Secured_Object[] objects = { objectWelcomeMessage, objectLocationList, objectDirectorContact,
                 objectNuclearCodes, objectSpecialChicken };
 
+        // This is a horrible implementation and I need to redo it... damn
         for (User user : users) {
             System.out.println("\n===NEXT USER===\n\n");
             for (Secured_Object object : objects) {
