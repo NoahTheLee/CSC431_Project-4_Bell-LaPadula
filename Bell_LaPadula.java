@@ -71,10 +71,35 @@ public class Bell_LaPadula {
     }
 
     public static void main(String[] args) {
-        User user1 = new User("Alice", ClearanceLevel.NOMINAL);
-        User user2 = new User("Bob", ClearanceLevel.RESTRICTED);
-        User user3 = new User("Charlie", ClearanceLevel.SECURE);
-        User user4 = new User("Dave", ClearanceLevel.THAUMIEL);
-        User user5 = new User("Eve", ClearanceLevel.APOLLYON);
+        User userAlice = new User("Alice", ClearanceLevel.NOMINAL);
+        User userBob = new User("Bob", ClearanceLevel.RESTRICTED);
+        User userCharlie = new User("Charlie", ClearanceLevel.SECURE);
+        User userDave = new User("Dave", ClearanceLevel.THAUMIEL);
+        User userEve = new User("Eve", ClearanceLevel.APOLLYON);
+
+        User[] users = { userAlice, userBob, userCharlie, userDave, userEve };
+
+        Secured_Object objectWelcomeMessage = new Secured_Object("Welcome Message", ClearanceLevel.NOMINAL,
+                "Welcome to the company!");
+        Secured_Object objectLocationList = new Secured_Object("Location List", ClearanceLevel.RESTRICTED,
+                "A list of all locations we work...");
+        Secured_Object objectDirectorContact = new Secured_Object("Director Contact List", ClearanceLevel.SECURE,
+                "The contact numbers for our directors.");
+        Secured_Object objectNuclearCodes = new Secured_Object("Nuclear Codes", ClearanceLevel.THAUMIEL,
+                "Nuclear codes. Be careful with them!");
+        Secured_Object objectSpecialChicken = new Secured_Object("Special Chicken", ClearanceLevel.APOLLYON,
+                "A recipe for very special chicken. Everyone loves it!");
+
+        Secured_Object[] objects = { objectWelcomeMessage, objectLocationList, objectDirectorContact,
+                objectNuclearCodes, objectSpecialChicken };
+
+        for (User user : users) {
+            System.out.println("\n===NEXT USER===\n\n");
+            for (Secured_Object object : objects) {
+                user.tryRead(object);
+            }
+
+        }
+
     }
 }
