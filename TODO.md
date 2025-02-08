@@ -15,17 +15,30 @@ V   V                 V
     [x] Possibly make an enumerator for this? > NOAH LEE
 
 2. [x] Set up objects/users > NOAH LEE
-        [x] Set up objects > NOAH LEE
-                Set this up as custom objects?
-        [x] Set up Users > NOAH LEE
-                Set this up as a custom object?
+    3. [x] Set up objects > NOAH LEE
+            [x] Set this up as custom objects? > NOAH LEE
+            [x] Consider pivoting to files? (definitely pivot to files somehow...) > NOAH LEE
+            [x] Finish padding out remaining files with data > NOAH LEE
+    4. [x] Set up Users > NOAH LEE
+            [x] Add user IDs > NOAH LEE
+            [x] Set this up as a custom object? > NOAH LEE
+                
 
-3. [ ] Access Control
-    [ ] Responses to access denied
+5. [x] Access Control > NOAH LEE
+    [x] Responses to access denied > NOAH LEE
 
-4. [ ] I/O
-    Terminal-input approach?
-    [ ] "Logging in" as diffent users?
+6. [ ] I/O > NOAH LEE
+        [x] Logging in as different users > NOAH LEE
+        [x] Prompts for read/write > NOAH LEE
+            [x] Read > NOAH LEE
+                [x] Process read > NOAH LEE
+            [x] Write > NOAH LEE
+                [x] Process write data > NOAH LEE
+                [x] Signature of users who accessed > NOAH LEE
+                [x] Copy file to "Buffer" to process write? > NOAH LEE
+
+7. Dum stuff
+        [ ] Add a goofy "welcome user" and prompt for sign in or something > NOAH LEE
 
 
 
